@@ -1,0 +1,88 @@
+<template>
+  <ul v-if="layout == ''">
+  <Auth />
+  </ul>
+  <ul v-else>
+  <Default />
+  </ul>
+</template>
+
+<script>
+// import Swal from 'sweetalert2';
+// import axios from "axios";
+//import http from '@/service/api.js';
+import Default from './components/layouts/default.vue';
+import Auth from './components/layouts/auth.vue'
+
+export default {
+  name: 'App',
+  components: {
+    Default,
+    Auth,
+  },
+  data() {
+    return {
+      //user_id: '',
+      layout: '',
+    }
+  },
+  // mounted() {
+  //   this.getUser();
+  // },
+  // methods: {
+  //   getUser() {
+  //     http.get('getUser')//http://racroad-api.test/api/
+  //       .then((response) => {
+  //         this.user_id = response.data.data.id;
+  //         this.message = response.data.message;
+  //         this.layout = this.user_id;
+  //       })
+  //   },
+  // },
+}
+</script>
+<style>
+@font-face {
+  font-family: THSarabun;
+  src: url(./assets/font/THSarabun.ttf);
+}
+
+.container-fluid span {
+  font-family: "THSarabun";
+}
+</style>
+
+            <!-- <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+            </div> -->
+              <!-- <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="ti-info-alt mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="ti-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Settings</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Private message
+                  </p>
+                </div>
+              </a> -->
