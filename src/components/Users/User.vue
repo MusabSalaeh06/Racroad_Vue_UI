@@ -5,7 +5,7 @@
                 <thead class="text-2xl text-gray-100 uppercase bg-primary dark:bg-gray-700 dark:text-gray-400">
                     <tr>
                         <th scope="col" class="py-3 px-6 whitespace-nowrap">
-                            รายชื่อผู้ใช้ทั่วไป00
+                            รายชื่อผู้ใช้ทั่วไป
                         </th>
                         <th scope="col" class="py-3 px-6 text-right" colspan="3" width="5%">
                         </th>
